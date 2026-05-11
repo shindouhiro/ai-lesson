@@ -18,7 +18,6 @@ themeConfig:
 drawings:
   enabled: true
   persist: false
-download: true
 highlighter: shiki
 lineNumbers: true
 ---

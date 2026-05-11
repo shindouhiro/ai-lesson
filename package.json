@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --no-export",
+    "build": "slidev build",
     "export": "slidev export"
   },
   "dependencies": {
