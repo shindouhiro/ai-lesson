@@ -1,0 +1,94 @@
+/* AI Lesson - Custom Styles */
+
+:root {
+  --slidev-theme-primary: #667eea;
+  --slidev-theme-secondary: #764ba2;
+}
+
+/* Global slide styling */
+.slidev-layout {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effects */
+.slidev-layout .grid > div {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slidev-layout .grid > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+}
+
+/* Table styling */
+.slidev-layout table {
+  font-size: 0.85em;
+}
+
+.slidev-layout th {
+  background: rgba(102, 126, 234, 0.15) !important;
+  font-weight: 600;
+}
+
+.slidev-layout td {
+  padding: 0.4em 0.8em;
+}
+
+/* Blockquote enhancement */
+.slidev-layout blockquote {
+  border-left-color: #667eea;
+  background: rgba(102, 126, 234, 0.06);
+  border-radius: 0 8px 8px 0;
+  padding: 1em 1.5em;
+}
+
+/* Mermaid diagram background fix for dark mode */
+.mermaid {
+  background: transparent !important;
+}
+
+/* Code block styling */
+.slidev-layout pre {
+  border-radius: 8px;
+}
+
+/* Section layout gradient */
+.slidev-layout.section h1 {
+  background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth v-click transitions */
+.slidev-vclick-target {
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+/* Timeline styles */
+.timeline .mermaid {
+  max-width: 100%;
+}
+
+/* Cover page enhancements */
+.slidev-layout.cover h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
