@@ -98,7 +98,7 @@ layout: default
 layout: default
 ---
 
-# MCP 生态与配置
+# MCP 生态与配置 (1/2)
 
 | 分类 | MCP Server | 功能 |
 |------|-----------|------|
@@ -108,7 +108,13 @@ layout: default
 | 📊 API | `apifox-mcp` | API 调用 |
 | 🐙 代码 | `github-mcp` | PR/Issue 管理 |
 
-<v-click>
+---
+layout: default
+---
+
+# MCP 生态与配置 (2/2)
+
+MCP 的配置文件通常为 JSON 格式：
 
 ```json
 // MCP 配置示例
@@ -126,5 +132,3 @@ layout: default
   }
 }
 ```
-
-</v-click>

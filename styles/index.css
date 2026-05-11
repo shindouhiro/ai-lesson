@@ -8,6 +8,23 @@
 /* Global slide styling */
 .slidev-layout {
   font-family: 'Inter', sans-serif;
+  overflow-y: auto !important;
+}
+
+/* Custom scrollbar for overflowing slides */
+.slidev-layout::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.slidev-layout::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slidev-layout::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.3);
+  border-radius: 3px;
+}
+.slidev-layout::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.6);
 }
 
 /* Gradient text utility */

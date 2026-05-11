@@ -39,34 +39,54 @@ graph LR
 </v-clicks>
 
 ---
-layout: two-cols
+layout: default
 ---
 
 # Claude Opus 深度解析
 
-<v-clicks>
+<div class="grid grid-cols-2 gap-6 mt-6">
 
-- 🧠 **超强推理能力**
-  - 编码 Benchmark 业界顶级
-  - 复杂算法和架构设计能力突出
-- 📚 **超长上下文**
-  - 200K Token 上下文窗口
-  - 可理解整个代码库
-- 🏗️ **架构理解**
-  - 不仅写代码，更理解设计模式
-  - 跨文件依赖分析
-- 🎯 **精确度**
-  - 代码生成一次通过率高
-  - 错误率远低于同类模型
-- 🔧 **工具使用**
-  - 原生支持 Tool Use
-  - 完美适配 Agent 工作流
+<div v-click class="p-4 rounded-lg border border-gray-700" style="background: rgba(30,41,59,0.5);">
+  <div class="font-bold text-lg mb-2 flex items-center gap-2">🧠 超强推理能力</div>
+  <ul class="text-sm opacity-80 list-disc ml-4">
+    <li>编码 Benchmark 业界顶级</li>
+    <li>复杂算法和架构设计能力突出</li>
+  </ul>
+</div>
 
-</v-clicks>
+<div v-click class="p-4 rounded-lg border border-gray-700" style="background: rgba(30,41,59,0.5);">
+  <div class="font-bold text-lg mb-2 flex items-center gap-2">📚 超长上下文</div>
+  <ul class="text-sm opacity-80 list-disc ml-4">
+    <li>200K Token 上下文窗口</li>
+    <li>可理解整个代码库</li>
+  </ul>
+</div>
 
-::right::
+<div v-click class="p-4 rounded-lg border border-gray-700" style="background: rgba(30,41,59,0.5);">
+  <div class="font-bold text-lg mb-2 flex items-center gap-2">🏗️ 架构理解</div>
+  <ul class="text-sm opacity-80 list-disc ml-4">
+    <li>不仅写代码，更理解设计模式</li>
+    <li>跨文件依赖分析</li>
+  </ul>
+</div>
 
-<div class="ml-4 mt-6">
+<div v-click class="p-4 rounded-lg border border-gray-700" style="background: rgba(30,41,59,0.5);">
+  <div class="font-bold text-lg mb-2 flex items-center gap-2">🎯 精确度 & 🔧 工具</div>
+  <ul class="text-sm opacity-80 list-disc ml-4">
+    <li>代码生成一次通过率高</li>
+    <li>原生支持 Tool Use，完美适配 Agent</li>
+  </ul>
+</div>
+
+</div>
+
+---
+layout: center
+---
+
+# Claude Opus 代码生成体验
+
+<div class="w-full text-left mt-8">
 
 ````md magic-move
 ```typescript

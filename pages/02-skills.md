@@ -181,9 +181,11 @@ role: 资深全栈工程师
 layout: default
 ---
 
-# Skills 技能包
+# Skills 技能包 (1/2)
 
 将 AI 的专业能力**模块化、可复用**
+
+<div class="mt-8">
 
 ```mermaid
 graph LR
@@ -203,9 +205,19 @@ graph LR
     style G fill:#f093fb,color:#fff
 ```
 
-<v-click>
+</div>
 
-<div class="grid grid-cols-2 gap-4 mt-4">
+---
+layout: default
+---
+
+# Skills 技能包 (2/2)
+
+将 AI 的专业能力**模块化、可复用**
+
+<div class="grid grid-cols-2 gap-6 mt-8">
+
+<div>
 
 ```yaml
 # SKILL.md 结构
@@ -224,6 +236,10 @@ description: Vue 3 最佳实践指南
 - 使用 TypeScript
 ```
 
+</div>
+
+<div>
+
 ```yaml
 # 技能包的力量
 # 一次定义，处处生效
@@ -239,4 +255,4 @@ description: Vue 3 最佳实践指南
 
 </div>
 
-</v-click>
+</div>

@@ -66,20 +66,18 @@ layout: two-cols
 
 ::right::
 
-<div class="ml-6 mt-12">
+<div class="ml-4 mt-4">
 
 ```mermaid
 graph TD
-    A["输入文本"] --> B["Token 化"]
-    B --> C["Embedding 层"]
-    C --> D["Transformer 层 x N"]
-    D --> E["输出层"]
-    E --> F["预测下一个 Token"]
-    F --> |"循环"| A
+    A["📥 输入文本"] --> B["🔤 Token 化 + Embedding"]
+    B --> C["🧠 Transformer 层 x N"]
+    C --> D["📤 预测下一个 Token"]
+    D -->|"循环"| A
 
-    style A fill:#667eea,color:#fff
-    style D fill:#764ba2,color:#fff
-    style F fill:#f093fb,color:#fff
+    style A fill:#667eea,color:#fff,stroke:#667eea
+    style C fill:#764ba2,color:#fff,stroke:#764ba2
+    style D fill:#f093fb,color:#000,stroke:#f093fb
 ```
 
 </div>
@@ -136,7 +134,7 @@ layout: default
 layout: default
 ---
 
-# 模型家族一览
+# 模型家族一览 (1/2)
 
 <div class="grid grid-cols-2 gap-6 mt-6">
 
@@ -175,6 +173,16 @@ layout: default
   <div class="text-sm opacity-70">LLaMA 3.1 · 3.2 · 4</div>
   <div class="text-xs mt-1 opacity-50">开源之王，推动民主化</div>
 </div>
+
+</div>
+
+---
+layout: default
+---
+
+# 模型家族一览 (2/2)
+
+<div class="grid grid-cols-2 gap-6 mt-6">
 
 <div v-click class="p-4 rounded-lg border border-gray-600">
   <div class="flex items-center gap-2 mb-2">
